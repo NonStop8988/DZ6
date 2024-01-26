@@ -17,7 +17,8 @@ void PrintPalindromeString(string str)
     }
 }
 
-Console.Clear();
+// Console.Clear();
 Console.Write("Введите строку, чтобы проверить, является ли она палиндромом: ");
 string str = Console.ReadLine()!;
-PrintPalindromeString(str);
+string lowerCaseString  = str.ToLower();
+PrintPalindromeString(lowerCaseString);
